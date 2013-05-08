@@ -1,0 +1,21 @@
+<form action="/search" method="get" class="search-form" role="search">
+    <input type="text" name="q" value="{{ search.terms | escape }}" />
+    <input type="submit" value="Search store..." />
+</form>
+
+{% if search.performed %}
+{% paginate search.results by 10 %}
+{% if search.results_count == 0 %}  
+<p>Your search for "{{ search.terms }}" did not yield any results.</p>              
+{% else %}
+<ol>
+    {% for item in search.results %}      
+    <li>{{ item.title | link_to: item.url }}</li>
+    {% endfor %}
+</ol>
+{% endif %}    
+{% if paginate.pages > 1 %}
+{{ paginate | default_pagination }}
+{% endif %}
+{% endpaginate %}    
+{% endif %}  

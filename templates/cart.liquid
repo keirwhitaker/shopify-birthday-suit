@@ -1,0 +1,33 @@
+{% if cart.item_count > 0 %}
+<form action="/cart" method="post" id="cart" class="cart">
+    <table>
+        <tr>
+            <th class="item desc"></th>
+            <th class="item price">Price</th>
+            <th class="item qty">Quantity</th>
+            <th class="item remove">Delete</th>
+            <th class="item total">Total</th>
+        </tr>
+        {% for item in cart.items %}
+        <tr id="cart-item-{{item.variant.id}}" class="cart-item">
+            <td class="item desc"><a href="/collections/{{ item.product.collections.first.title | downcase }}#{{ item.product.handle }}">{{ item.title }}</a></td>
+            <td class="item price">{{ item.price | money }}</td>
+            <td class="item qty"><input type="text" size="4" pattern="[0-9]*" name="updates[{{item.variant.id}}]" id="quantity-{{ item.variant.id }}" class="quantity" value="{{ item.quantity }}" min="1" onfocus="this.select();"/></td>
+            <td class="item remove"><a href="/cart/change/{{item.variant.id}}?quantity=0">Remove</a></td>
+            <td class="item price">{{ item.line_price | money }}</td>
+        </tr>
+        {% endfor %}
+        <tr class="subtotal">
+            <td colspan="5">Total: <strong>{{ cart.total_price | money }}</strong></td>
+        </tr>
+        <tr class="actions">
+            <td colspan="5">
+                <input class="button" type="submit" id="update-cart" name="update" value="Update"  />
+                <input class="button" type="submit" name="checkout" value="Checkout" />
+            </td>
+        </tr>
+    </table>
+</form>
+{% else %}
+<p>It appears that your cart is currently empty!</p>
+{% endif %}

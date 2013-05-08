@@ -1,0 +1,14 @@
+<h2>{{ product.title }}</h2>
+{{ product.description }}
+<form action="/cart/add" method="post" enctype="multipart/form-data">
+    <select name="id">
+        {% for variant in product.variants %}
+        {% if variant.available == true %}
+        <option value="{{variant.id}}"> {{ variant.title }} for {{ variant.price | money_with_currency }} </option>
+        {% else %}
+        <option disabled="disabled"> {{ variant.title }} - sold out! </option>
+        {% endif %}
+        {% endfor %}
+    </select>
+    <input type="submit" name="add" id="add" value="Add to Cart" class="button">
+</form>

@@ -1,0 +1,9 @@
+{% if collection.all_products_count > 0 %}
+{% for product in collection.products %}
+<h2><a href="{{ product.url }}">{{ product.title }}</a></h2>
+{{ product.description }}
+<img src="{{ product.featured_image | product_img_url: 'grande' }}" alt="{{ product.title | escape }}" />
+{% endfor %}
+{% else %}
+<p>Sorry, there are no products in this collection</p>
+{% endif %}
