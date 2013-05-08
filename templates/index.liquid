@@ -5,7 +5,7 @@
 <h2><a href="{{ product.url }}">{{ product.title }}</a></h2>
 {{ product.description }}
 <hr />
-<img src="{{ product.featured_image | product_img_url: 'grande' }}" alt="{{ product.title | escape }}" />
+<img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}" />
 {% else %}
 <p>You have no products in your Frontpage collection. <a href="http://www.shopify.com/admin/custom_collections">Add some.</a></p>
 {% endfor %}
