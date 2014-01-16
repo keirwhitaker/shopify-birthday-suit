@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width" />  
     {{ content_for_header }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
-    {{ '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' | script_tag }}
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' | script_tag }}
 </head>
 <body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
     
@@ -42,11 +42,7 @@
         </nav>
     </header>
 
-    {% if template == 'list-collections' %}
-    {% include 'collection-listing' %}
-    {% else %}
     {{ content_for_layout }}
-    {% endif %}
     
     {{ 'shop.js'  | asset_url | script_tag }}
 
