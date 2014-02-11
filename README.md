@@ -14,7 +14,7 @@ The theme references a shop.js and style.css file but these are empty, consequen
 
 ### Config Folder
 
-I have included a very basic settings.html file. This includes a checkbox to indicate the use of a custom logo along with a file upload to add in a custom logo. Feel free to build on this and add in your own settings. Full info on theme settings can be found in the [Shopify Docs](http://docs.shopify.com/themes/liquid-variables/theme-settings)
+I have included a very basic settings.html file. This includes a checkbox to indicate the use of a custom logo along with a file upload to add in a custom logo. Feel free to build on this and add in your own settings. Full info on theme settings can be found in the [Shopify Docs](http://docs.shopify.com/themes/liquid-variables/theme-settings).
 
 ### Layout Folder
 
@@ -46,6 +46,8 @@ All of the following templates are intentionally very basic and designed as star
 * [Shopify Docs](http://docs.shopify.com/) 
 * [Shopify for Designers](http://shopify.com/fordesigners)
 
-Shopify Birthday Suit was created by Keir Whitaker
+## Acknowledgements
+
+Shopify Birthday Suit was created and is maintained by Keir Whitaker with inspiration from the hundreds of taltented Shopify theme developers sharing code.
 
 [keirwhitaker.com](http://keirwhitaker.com) | [@keirwhitaker](http://keirwhitaker.com)
