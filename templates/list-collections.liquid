@@ -1,7 +1,5 @@
 <ul>
     {% for collection in collections %}
-    {% unless collection.handle == 'frontpage' %}
 	<li><a href="{{ collection.url }}">{{ collection.title }}</a>
-    {% endunless %}
     {% endfor %}
 </ul>
