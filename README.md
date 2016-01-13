@@ -53,5 +53,5 @@ All of the following templates are intentionally very basic and designed as star
 Shopify Birthday Suit was created and is maintained by Keir Whitaker with inspiration from the hundreds of talented Shopify theme developers out there sharing their code and ideas.
 
 * [keirwhitaker.com](http://keirwhitaker.com) &mdash; Links to ecommerce related projects
-* [Byte Size Bites](http://keirwhitaker.com/#subscribe) &mdash; - Email newsletter covering tech and culture
-* [@keirwhitaker](http://keirwhitaker.com/twitter) &mdash; - Twitter
+* [Byte Size Bites](http://keirwhitaker.com/#subscribe) &mdash; Email newsletter covering tech and culture
+* [@keirwhitaker](http://keirwhitaker.com/twitter) &mdash; Twitter
