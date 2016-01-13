@@ -14,7 +14,7 @@ The theme layout file references a <code>shop.js</code> and <code>style.css</cod
 
 ### Config Folder
 
-I have included a very basic settings_schema.json file. This includes a checkbox to indicate the use of a custom logo along with a file upload to add in a custom logo. Feel free to build on this and add in your own settings. Full info on theme settings can be found in the [Shopify Docs](https://docs.shopify.com/themes/theme-development/storefront-editor/settings-schema).
+I have included a very basic <code>settings_schema.json</code> file. This includes a checkbox to indicate the use of a custom logo along with a file upload to add in a custom logo. Feel free to build on this and add in your own settings. Full info on theme settings can be found in the [Shopify Docs](https://docs.shopify.com/themes/theme-development/storefront-editor/settings-schema).
 
 ### Layout Folder
 
