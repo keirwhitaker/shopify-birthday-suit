@@ -46,7 +46,7 @@ All of the following templates are intentionally very basic and designed as star
 
 * [Shopify Docs](http://docs.shopify.com/) &mdash; Official documentation site
 * [Shopify Partner Program](http://shopify.com/partners) &mdash; Sign up to the free Partner program and open as many development stores as you need
-* [Shopify Partner Blog](http://shopify.com/partners) &mdash; Regular articles covering ecommerce, design, Shopify themes, freelancing and more
+* [Shopify Partner Blog](http://shopify.com/partners/blog) &mdash; Regular articles covering ecommerce, design, Shopify themes, freelancing and more
 
 ## Acknowledgements
 
