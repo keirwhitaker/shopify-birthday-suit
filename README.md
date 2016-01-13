@@ -10,7 +10,7 @@ To install the theme download the ZIP file and upload the same ZIP file to your 
 
 ### Assets Folder
 
-The theme layout file references a shop.js and style.css file. Both of these are empty - intentionally. Consequently the theme is rendered with default browser styling and no JS interactions.
+The theme layout file references a <code>shop.js</code> and <code>style.css</code> file. Both of these are empty - intentionally. Consequently the theme is rendered with default browser styling and zero JS interactions.
 
 ### Config Folder
 
@@ -18,7 +18,7 @@ I have included a very basic settings_schema.json file. This includes a checkbox
 
 ### Layout Folder
 
-The default layout file theme.layout is included. It includes a reference to the latest release of jQuery and adds some useful classes based on page titles and templates to the body element.
+The default layout file <code>theme.layout</code> is included. It includes a reference to the latest release of jQuery and adds some useful classes based on page titles and templates to the body element.
 
 A basic header element is included that includes Liquid code to output the current cart item count along with a link to the checkout.
 
@@ -26,9 +26,9 @@ Finally I have included code to output a simple navigation list using the defaul
 
 ### Templates
 
-The following are included with basic boilerplate code. For example <code>product.liquid</code> will output the product title and description along with a form detailing all product variants and price.
+The following are included with basic boilerplate code. For example <code>product.liquid</code> will output the product title and description along with a form detailing all product variants and price. Appropriate HTML is used for headings, paragraphs and lists but are easily customisable.
 
-All of the following templates are intentionally very basic and designed as starting points.
+All of the following templates are intentionally very basic and designed as starting points:
 
 * <code>404.liquid</code>
 * <code>article.liquid</code>
