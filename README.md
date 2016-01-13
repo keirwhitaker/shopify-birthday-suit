@@ -1,6 +1,6 @@
 # Shopify Birthday Suit
 
-Shopify Birthday Suit is an exceedingly bare bones Shopify theme intended for use by theme developers as a basis for their own theme development. It is not intended to be used "as is", rather as a building block. Feel free to modify and use for your own means.
+Shopify Birthday Suit is an exceedingly bare bones [Shopify](http://shopify.com/) theme intended for use by theme developers as a basis for their own theme development. It is not intended to be used "as is", rather as a building block. Feel free to modify and use for your own means.
 
 ## Install
 
