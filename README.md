@@ -44,12 +44,14 @@ All of the following templates are intentionally very basic and designed as star
 
 ## Shopify Resources
 
-* [Shopify Docs](http://docs.shopify.com/)
-* [Shopify Partner Program](http://shopify.com/partners)
+* [Shopify Docs](http://docs.shopify.com/) &mdash; Official documentation site
+* [Shopify Partner Program](http://shopify.com/partners) &mdash; Sign up to the free Partner program and open as many development stores as you need
+* [Shopify Partner Blog](http://shopify.com/partners) &mdash; Regular articles covering ecommerce, design, Shopify themes, freelancing and more
 
 ## Acknowledgements
 
 Shopify Birthday Suit was created and is maintained by Keir Whitaker with inspiration from the hundreds of talented Shopify theme developers out there sharing their code and ideas.
 
-* [keirwhitaker.com](http://keirwhitaker.com)
-* [@keirwhitaker](http://keirwhitaker.com/twitter)
+* [keirwhitaker.com](http://keirwhitaker.com) &mdash; Links to ecommerce related projects
+* [Byte Size Bites](http://keirwhitaker.com/#subscribe) &mdash; - Email newsletter covering tech and culture
+* [@keirwhitaker](http://keirwhitaker.com/twitter) &mdash; - Twitter
