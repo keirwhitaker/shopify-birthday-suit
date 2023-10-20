@@ -9,11 +9,11 @@
             <th class="item total">Total</th>
         </tr>
         {% for item in cart.items %}
-        <tr id="cart-item-{{item.variant.id}}" class="cart-item">
+        <tr id="cart-item-{{ item.variant.id }}" class="cart-item">
             <td class="item desc"><a href="/collections/{{ item.product.collections.first.title | downcase }}#{{ item.product.handle }}">{{ item.title }}</a></td>
             <td class="item price">{{ item.price | money }}</td>
-            <td class="item qty"><input type="text" size="4" pattern="[0-9]*" name="updates[{{item.variant.id}}]" id="quantity-{{ item.variant.id }}" class="quantity" value="{{ item.quantity }}" min="1" onfocus="this.select();"/></td>
-            <td class="item remove"><a href="/cart/change/{{item.variant.id}}?quantity=0">Remove</a></td>
+            <td class="item qty"><input type="text" size="4" pattern="[0-9]*" name="updates[{{ item.variant.id }}]" id="quantity-{{ item.variant.id }}" class="quantity" value="{{ item.quantity }}" min="1" onfocus="this.select();"/></td>
+            <td class="item remove"><a href="/cart/change/{{ item.variant.id }}?quantity=0">Remove</a></td>
             <td class="item price">{{ item.line_price | money }}</td>
         </tr>
         {% endfor %}

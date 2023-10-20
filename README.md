@@ -14,7 +14,7 @@ The theme layout file references a <code>shop.js</code> and <code>style.css</cod
 
 ### Config Folder
 
-I have included a very basic <code>settings_schema.json</code> file. This includes a checkbox to indicate the use of a custom logo along with a file upload to add in a custom logo. Feel free to build on this and add in your own settings. Full info on theme settings can be found in the [Shopify Docs](https://docs.shopify.com/themes/theme-development/storefront-editor/settings-schema).
+An empty <code>settings_schema.json</code> file is included. Build on this and add in your own settings. Full info on theme settings can be found in the [Shopify Docs](https://docs.shopify.com/themes/theme-development/storefront-editor/settings-schema).
 
 ### Layout Folder
 
@@ -26,21 +26,25 @@ Finally I have included code to output a simple navigation list using the defaul
 
 ### Templates
 
-The following are included with basic boilerplate code. For example <code>product.liquid</code> will output the product title and description along with a form detailing all product variants and price. Appropriate HTML is used for headings, paragraphs and lists but are easily customisable.
+The following are included with a reference to a "main" section each, following the Dawn example. For example <code>product.json</code> contains a reference to <code>main-product.liquid</code> section. Each main section contains just some very basic boilerplate code for you to start developing from.
 
 All of the following templates are intentionally very basic and designed as starting points:
 
--   <code>404.liquid</code>
--   <code>article.liquid</code>
--   <code>blog.liquid</code>
--   <code>cart.liquid</code>
--   <code>collection.liquid</code>
--   <code>index.liquid</code>
--   <code>list-collections.liquid</code>
--   <code>page.liquid</code>
--   <code>password.liquid</code>
--   <code>product.liquid</code>
--   <code>search.liquid</code>
+-   <code>404.json</code>
+-   <code>article.json</code>
+-   <code>blog.json</code>
+-   <code>cart.json</code>
+-   <code>collection.json</code>
+-   <code>index.json</code>
+-   <code>list-collections.json</code>
+-   <code>page.json</code>
+-   <code>password.json</code>
+-   <code>product.json</code>
+-   <code>search.json</code>
+
+### Locales
+
+There is a basic default English locale included with this theme, but no translation strings.
 
 ## Acknowledgements
 

@@ -1,0 +1,70 @@
+{% layout none %}
+
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_background }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    <title>Gift card</title>
+
+    <meta name="description" content="">
+
+    {{ content_for_header }}
+
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>
+          {% if settings.currency_code_enabled %}
+            {{ gift_card.balance | money_with_currency }}
+          {% else %}
+            {{ gift_card.balance | money }}
+          {% endif %}
+        </h1>
+        {%- if gift_card.enabled == false or gift_card.expired -%}
+          <p>Expired</p>
+        {%- endif -%}
+      </div>
+      {% if gift_card.expires_on %}
+        {%- assign gift_card_expiration_date = gift_card.expires_on | date: '%B %e, %Y' -%}
+        <p class="gift-card__text">
+         Expires on: {{ gift_card_expiration_date }}
+        </p>
+      {% endif %}
+    </header>
+
+    <main>
+      <div class="gift-card__image-wrapper">
+          <img
+            src="{{ 'gift-card/card.svg' | shopify_asset_url }}"
+            alt=""
+            height=""
+            width=""
+            loading="lazy"
+          >
+      </div>
+      <h2>Shop name</h2>
+      <div>
+        <p>How to use</p>
+      </div>
+      <p>{{ gift_card.code | format_code }}</p>
+      <div data-identifier="{{ gift_card.qr_identifier }}"></div>
+        <a href="{{ gift_card.pass_url }}">
+          <img
+            src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
+            width="120"
+            height="40"
+            alt=""
+            loading="lazy"
+          >
+        </a>
+    </main>
+  </body>
+</html>
