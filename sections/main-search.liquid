@@ -5,7 +5,7 @@
 {% if search.performed %}
 {% paginate search.results by 10 %}
 {% if search.results_count == 0 %}
-<p>Your search for "{{ search.terms }}" did not yield any results</p>              
+<p>Your search for "{{ search.terms }}" did not yield any results</p>
 {% else %}
 <ol>
     {% for item in search.results %}
