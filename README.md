@@ -48,7 +48,8 @@ There is a basic default English locale included with this theme, but no transla
 
 ## Acknowledgements
 
-Shopify Birthday Suit was created by Keir Whitaker with inspiration from the hundreds of talented Shopify theme developers out there sharing their code and ideas.
+Shopify Birthday Suit was created by Keir Whitaker with inspiration from the hundreds of talented Shopify theme developers out there sharing their code and ideas. It was updated to Shopify OS2 by Craig Cooper.
 
--   [keirwhitaker.com](http://keirwhitaker.com)
--   [@keirwhitaker](http://keirwhitaker.com/twitter)
+-   [keirwhitaker.com](https://keirwhitaker.com)
+-   [@keirwhitaker](https://keirwhitaker.com/twitter)
+-   [craigcooper.xyz](https://craigcooper.xyz)
